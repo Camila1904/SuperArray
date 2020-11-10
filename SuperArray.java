@@ -54,10 +54,9 @@ public class SuperArray {
   }
   public boolean contains(String x) {
     for (int i=0;i<size;i++) {
-      if(data[i].equals(x)) {
+      if(data[i].equals(x))
         return true;
       }
-    }
     return false;
   }
   public void add(int index, String element) {
