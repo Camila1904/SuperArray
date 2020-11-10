@@ -13,6 +13,7 @@ public class SuperArrayTester {
     tester1.add("pink");
     System.out.println(tester1.size());
     System.out.println(tester1.isEmpty());
+    System.out.println(tester1.toString());
 
     SuperArray tester2 = new SuperArray(5);
     System.out.println(tester2.add("hello"));
