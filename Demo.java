@@ -1,19 +1,15 @@
 public class Demo {
   public static void removeDuplicates(SuperArray x) {
-    for (int i = 0; i<x.size();i++) {
-      if (x.indexOf(x.get(i)) != i) {
+    for (int i = x.size()-1; i>=0;i--) {
+      if (x.contains(x.get(i)) != i) {
         x.remove(i);
-        i--;
-      }
-      else {
-        i++;
       }
     }
   }
   public static SuperArray findOverlap(SuperArray a, SuperArray b) {
     SuperArray overlap = new SuperArray();
     for (int i=0; i<a.size();i++) {
-      if(b.indexOf(a.get(i)) != -1) {
+      if(b.contains(a.get(i)) != i) {
         overlap.add(a.get(i));
       }
     }
