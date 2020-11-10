@@ -35,17 +35,6 @@ public class SuperArray {
     data[index] = element;
     return replaced;
   }
-  public void add(int index, String element) {
-    if (size == data.length) {
-      resize();
-    }
-    String[] sizer = new String[data.length];
-    for (int i=0;i<index;i++) {
-      sizer[i+1] = data[i];
-    }
-    data = sizer;
-    size++;
-  }
   public boolean isEmpty() {
     return size == 0;
   }
@@ -70,6 +59,21 @@ public class SuperArray {
       }
     }
     return false;
+  }
+  public void add(int index, String element) {
+    if (size == data.length) {
+      resize();
+    }
+    String[] sizer = new String[data.length];
+    for (int i=0;i<index;i++) {
+      sizer[i] = data[i];
+    }
+    sizer[index] = element;
+    for (int i=index;i<data.length-1;i++) {
+      sizer[i+1] = data[i];
+    }
+    data = sizer;
+    size++;
   }
   public String remove(int index) {
     String newString = data[index];
