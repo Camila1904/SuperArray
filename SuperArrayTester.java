@@ -39,5 +39,18 @@ public class SuperArrayTester {
     System.out.println(tester2.remove(9));
     System.out.println(tester2.toString());
     System.out.println(tester2.indexOf("white"));
+
+    SuperArray tester3 = new SuperArray();
+    tester3.add("red");
+    tester3.add("orange");
+    tester3.add("yellow");
+    tester3.add("red");
+    tester3.add("green");
+    tester3.add("blue");
+    tester3.add("purple");
+    tester3.add("blue");
+    System.out.println(tester3.toString());
+    System.out.println(tester3.lastIndexOf("red"));
+    System.out.println(tester3.lastIndexOf("blue"));
   }
 }
