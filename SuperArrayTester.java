@@ -12,9 +12,11 @@ public class SuperArrayTester {
     tester1.add("hi");
     tester1.add("pink");
     System.out.println(tester1.size());
+    System.out.println(tester1.isEmpty());
 
     SuperArray tester2 = new SuperArray(5);
     System.out.println(tester2.add("hello"));
+    System.out.println(tester2.isEmpty());
     tester2.add("fork");
     tester2.add("black");
     tester2.add("white");
