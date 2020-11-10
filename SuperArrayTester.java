@@ -17,6 +17,7 @@ public class SuperArrayTester {
     System.out.println(tester1.contains("white"));
     System.out.println(tester1.remove(0));
     System.out.println(tester1.toString());
+    System.out.println(tester1.indexOf("pink"));
 
     SuperArray tester2 = new SuperArray(5);
     System.out.println(tester2.add("hello"));
@@ -37,5 +38,6 @@ public class SuperArrayTester {
     System.out.println(tester2.contains("purple"));
     System.out.println(tester2.remove(9));
     System.out.println(tester2.toString());
+    System.out.println(tester2.indexOf("white"));
   }
 }
