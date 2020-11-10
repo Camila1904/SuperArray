@@ -32,5 +32,6 @@ public class SuperArrayTester {
     System.out.println(tester2.toString());
     tester2.add(6, "white");
     System.out.println(tester2.contains("white"));
+    System.out.println(tester2.contains("purple"));
   }
 }
