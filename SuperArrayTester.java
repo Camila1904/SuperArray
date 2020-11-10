@@ -15,6 +15,8 @@ public class SuperArrayTester {
     System.out.println(tester1.isEmpty());
     System.out.println(tester1.toString());
     System.out.println(tester1.contains("white"));
+    System.out.println(tester1.remove(0));
+    System.out.println(tester1.toString());
 
     SuperArray tester2 = new SuperArray(5);
     System.out.println(tester2.add("hello"));
@@ -22,7 +24,7 @@ public class SuperArrayTester {
     tester2.add("fork");
     tester2.add("black");
     tester2.add("white");
-    tester2.add("spoom");
+    tester2.add("spoon");
     System.out.println(tester2.toString());
     tester2.add(5, "knife");
     tester2.add(6, "dog");
@@ -30,8 +32,10 @@ public class SuperArrayTester {
     tester2.add(8, "snake");
     tester2.add(9, "rabbit");
     System.out.println(tester2.toString());
-    tester2.add(6, "white");
+    tester2.add(6, "printer");
     System.out.println(tester2.contains("white"));
     System.out.println(tester2.contains("purple"));
+    System.out.println(tester2.remove(9));
+    System.out.println(tester2.toString());
   }
 }
