@@ -18,5 +18,14 @@ public class ErrorTester {
     System.out.println("\nCONSTRUCTOR has an illegal argument");
     e.printStackTrace();
   }
+  try {
+    SuperArray test2 = new SuperArray(3);
+    test2.add("red");
+    test2.set(1,"white");
+  }
+  catch (IndexOutOfBoundsException e) {
+    System.out.println("\nADD has an index out of bounds");
+    e.printStackTrace();
+  }
 }
 }
