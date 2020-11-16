@@ -35,5 +35,12 @@ public class ErrorTester {
     System.out.println("\nADD has an index out of bounds");
     e.printStackTrace();
   }
+  try {
+    tester.remove(13);
+  }
+  catch (IndexOutOfBoundsException e) {
+    System.out.println("\nREMOVE has an index out of bounds");
+    e.printStackTrace();
+  }
 }
 }
