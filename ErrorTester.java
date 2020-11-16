@@ -27,5 +27,13 @@ public class ErrorTester {
     System.out.println("\nADD has an index out of bounds");
     e.printStackTrace();
   }
+  try {
+    SuperArray test3 = new SuperArray();
+    test3.add(1, "black");
+  }
+  catch (IndexOutOfBoundsException e) {
+    System.out.println("\nADD has an index out of bounds");
+    e.printStackTrace();
+  }
 }
 }
